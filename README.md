@@ -8,19 +8,16 @@ twg3sr
 
 DOI: link**
 
-Link to press release**
+[Press Release](press_release.md)
 
-Link to data**
+[Data](https://myuva-my.sharepoint.com/:f:/r/personal/twg3sr_virginia_edu/Documents/Project1%20Data?csf=1&web=1&e=v0GJec)
 
-Link to pipeline**
+[Pipeline Notebook](hospital_readmission_pipeline.ipynb)
+[Pipeline Markdown](hospital_readmission_pipeline.md)
 
 This project is licensed under the MIT License. See the [License](LICENSE) file for details.
 
 
-
-
-
-https://myuva-my.sharepoint.com/:f:/g/personal/twg3sr_virginia_edu/IgAVRklU5py-T67ILJRHtYFiAb_P1H62mBsq_1IOZMFrTXM?e=NCqfwT 
 
 
 ## Problem Definition
