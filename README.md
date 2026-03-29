@@ -61,11 +61,11 @@ This project belongs to the domain of healthcare analytics and hospital operatio
 
 | Title | Brief Description | Link |
 |------|------------------|------|
-| Hospital Readmission Risk and Risk Factors of People with a Primary or Secondary Discharge Diagnosis of Diabetes | Identifies key risk factors for 30-day readmission among diabetic patients, including comorbidities and length of stay. | [View Article](background_readings/article1.pdf) |
-| A Systematic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes | Summarizes recent research on diabetes-related readmissions and highlights major contributing factors. | [View Article](background_readings/article2.pdf) |
-| Taking Steps in the Hospital to Prevent Diabetes-Related Readmissions | Describes strategies hospitals can use to reduce readmissions, such as patient education and discharge planning. | [View Article](background_readings/article3.pdf) |
-| Diabetes | Provides an overview of diabetes, including causes, complications, and management. | [View Article](background_readings/article4.pdf) |
-| Reducing Hospital Readmissions | Explains causes of hospital readmissions and general strategies to reduce them. | [View Article](background_readings/article5.pdf) |
+| Hospital Readmission Risk and Risk Factors of People with a Primary or Secondary Discharge Diagnosis of Diabetes | Identifies key risk factors for 30-day readmission among diabetic patients, including comorbidities and length of stay. | [View Article](background_readings/Hospital Readmission Risk and Risk Factors of People with a Primary or Secondary Discharge Diagnosis of Diabetes.pdf) |
+| A Systematic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes | Summarizes recent research on diabetes-related readmissions and highlights major contributing factors. | [View Article](background_readings/A Systematic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes.pdf) |
+| Taking Steps in the Hospital to Prevent Diabetes-Related Readmissions | Describes strategies hospitals can use to reduce readmissions, such as patient education and discharge planning. | [View Article](background_readings/Taking Steps in the Hospital to Prevent Diabetes-Related Readmissions.md) |
+| Diabetes | Provides an overview of diabetes, including causes, complications, and management. | [View Article](background_readings/diabetes.md) |
+| Reducing Hospital Readmissions | Explains causes of hospital readmissions and general strategies to reduce them. | [View Article](background_readings/Reducing Hospital Readmissions.md) |
 
 
 
