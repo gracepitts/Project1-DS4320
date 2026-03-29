@@ -94,10 +94,10 @@ Parquet format was chosen for storage due to its efficiency and compatibility wi
 
 | Table Name | Description | Link |
 |------------|------------|------|
-| patients | Patient-level demographic information, one row per patient | [patients.parquet](patients.parquet) |
-| encounters | Encounter-level hospital visit information, one row per encounter | [encounters.parquet](encounters.parquet) |
-| clinical | Clinical and diagnostic variables for each encounter | [clinical.parquet](clinical.parquet) |
-| medications_outcomes | Medication data and readmission outcome for each encounter | [medications_outcomes.parquet](medications_outcomes.parquet) |
+| patients | Patient-level demographic information, one row per patient | [patients.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/twg3sr_virginia_edu/IQBK_1NokQTsTq5WyU8SaKDgAZcyswwj80jzQTX26gCu4yo?e=3RUUWI) |
+| encounters | Encounter-level hospital visit information, one row per encounter | [encounters.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/twg3sr_virginia_edu/IQDJ0r5RoG6yRakI6xiLKXDAAR5GGeIdbEu07zgr30-rjiQ?e=skdcoZ) |
+| clinical | Clinical and diagnostic variables for each encounter | [clinical.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/twg3sr_virginia_edu/IQBOYMXyqq7wT6a8pt0p-RmdAc2JmX7h2agFWNhnGdSfOb8?e=O9lnPG) |
+| medications_outcomes | Medication data and readmission outcome for each encounter | [medications_outcomes.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/twg3sr_virginia_edu/IQCdTWMRxN2LT6B_aA1LwnofAfjj4mvQmlMKMoGLoDIdbUE?e=oNnyoZ) |
 
 
 | Table | Name | Data Type | Description | Example |
@@ -133,6 +133,15 @@ Parquet format was chosen for storage due to its efficiency and compatibility wi
 | medications_outcomes | diabetesMed | string | Diabetes medication given | Yes |
 | medications_outcomes | readmitted | string | Readmission outcome | NO |
 
-**Uncertainty table needed
+| Feature               | % Missing | Mean | Median | Std Dev | Interpretation |
+|----------------------|----------|------|--------|--------|----------------|
+| time_in_hospital     | 0.0      | 4.40 | 4.0    | 2.99   | Slight right skew; moderate variability indicates that most patients have short stays, but some have longer hospitalizations, introducing uncertainty in predicting outcomes. |
+| number_outpatient    | 0.0      | 0.36 | 0.0    | 1.08   | Strong right skew; most patients have no outpatient visits, but a small number have many, creating high variability and uncertainty driven by outliers. |
+| number_emergency     | 0.0      | 0.20 | 0.0    | 0.93   | Strong right skew; most patients have no prior emergency visits, but a few have multiple visits, increasing uncertainty in modeling this feature. |
+| number_inpatient     | 0.0      | 0.64 | 0.0    | 1.26   | Strong right skew with relatively high spread; a small subset of patients with many prior inpatient visits contributes heavily to variability and is a key driver of uncertainty. |
+| num_lab_procedures   | 0.0      | 43.10| 44.0   | 19.67  | Slight left skew with a wide spread; high variability suggests differences in testing intensity across patients, increasing uncertainty in interpretation. |
+| num_procedures       | 0.0      | 1.34 | 1.0    | 1.71   | Right skew with moderate variability; most patients have few procedures, but some have several, contributing to uncertainty in patient complexity. |
+| num_medications      | 0.0      | 16.02| 15.0   | 8.13   | Right skew with large spread; significant variation in medication count reflects differences in treatment complexity and contributes to uncertainty in modeling. |
+| number_diagnoses     | 0.0      | 7.42 | 8.0    | 1.93   | Slight left skew with relatively low variability; values are more consistent across patients, indicating lower uncertainty compared to other features. |
 
 
