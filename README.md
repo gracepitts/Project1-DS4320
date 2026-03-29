@@ -76,8 +76,8 @@ For this project, I used data from the UCI Machine Learning Repository, specific
 
 | File Name | Description | Link |
 |----------|------------|------|
-| tables_creation.py | Loads the original dataset and splits it into four relational tables (patients, encounters, clinical, medications_outcomes), saving each as a parquet file | [View Code](tables_creation.py) |
-| diabetic_data.csv | Raw dataset used to construct the relational tables | [View Data](PASTE_ONEDRIVE_LINK_HERE) |
+| data_creation.py | Loads the original dataset and splits it into four relational tables (patients, encounters, clinical, medications_outcomes), saving each as a parquet file | [View Code](data_creation.py) |
+| diabetic_data.csv | Raw dataset used to construct the relational tables | [View Data](https://myuva-my.sharepoint.com/:f:/g/personal/twg3sr_virginia_edu/IgCBrNJwJpRyT5QfgCtf4UZVAf_5XkRYigD59zb_39zYzDU?e=bzV9zb) |
 
 Bias in this dataset may arise in several ways. First, the dataset only includes patients with diabetes, which limits the ability to generalize findings to the broader population. Second, the data consists only of hospital encounter records, meaning it includes individuals who accessed healthcare and excludes those without access to medical services. Additionally, missing values in variables such as weight and medical specialty may introduce bias if certain groups are more likely to have incomplete data. Finally, the dataset spans from 1999 to 2008, so changes in medical practices over time may limit how well the data reflects current conditions.
 
