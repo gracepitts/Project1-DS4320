@@ -7,4 +7,5 @@
 ## This project analyzes hospital encounter data to identify key factors that are associated with higher readmission risk. The results show that patients with more prior hospital visits and more complex treatment needs—such as those taking more medications or undergoing more lab procedures—are more likely to be readmitted. Discharge conditions also play an important role, suggesting that patients who require additional care or support after leaving the hospital may be at greater risk. These findings can help healthcare providers more effectively identify high-risk patients at the time of discharge. By using this information, providers can take proactive steps such as improving discharge planning, scheduling earlier follow-up appointments, and offering additional support to patients who need it most. This can ultimately reduce readmissions, improve patient outcomes, and lower healthcare costs.
 
 
-<img width="927" height="620" alt="image" src="https://github.com/user-attachments/assets/cda05854-15dd-4c06-bcff-73557c0c57df" />
+<img width="919" height="587" alt="image" src="https://github.com/user-attachments/assets/6d8896fe-3fd1-4bcb-b809-78307bfa10a3" />
+
