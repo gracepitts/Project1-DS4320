@@ -8,17 +8,19 @@ This repository contains a project focused on predicting 30-day hospital readmis
 
 **Net ID:** twg3sr
 
-**DOI:** [DOI](https://doi.org/10.5281/zenodo.19341593)
+**Links:**
 
-**Press Release:** [Press Release](press_release.md)
+[DOI](https://doi.org/10.5281/zenodo.19341593)
 
-**Data:** [Data](https://myuva-my.sharepoint.com/:f:/r/personal/twg3sr_virginia_edu/Documents/Project1%20Data?csf=1&web=1&e=v0GJec)
+[Press Release](press_release.md)
 
-**Pipeline Notebook:** [Pipeline Notebook](pipeline/hospital_readmission_pipeline.ipynb)
+[Data](https://myuva-my.sharepoint.com/:f:/r/personal/twg3sr_virginia_edu/Documents/Project1%20Data?csf=1&web=1&e=v0GJec)
 
-**Pipeline Markdown:** [Pipeline Markdown](pipeline/hospital_readmission_pipeline.md)
+[Pipeline Notebook](pipeline/hospital_readmission_pipeline.ipynb)
 
-**License:** This project is licensed under the MIT License. See the [License](LICENSE) file for details.
+[Pipeline Markdown](pipeline/hospital_readmission_pipeline.md)
+
+This project is licensed under the MIT License. See the [License](LICENSE) file for details.
 
 
 
