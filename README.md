@@ -1,4 +1,4 @@
-# DS4320 Project 1: Identifying Factors Associated with 30-Day Hospital Readmission in Diabetic Patients
+# DS 4320 Project 1: Identifying Factors Associated with 30-Day Hospital Readmission in Diabetic Patients
 
 **Executive Summary:** This repository contains a data science project focused on predicting 30-day hospital readmission risk among diabetic patients. It includes a relational dataset built from hospital encounter data, a Python and DuckDB pipeline for analysis, and a press release that summarizes key findings for a general audience.
 
