@@ -109,53 +109,39 @@ The dataset was split into four relational tables to reduce redundancy and bette
 | medications_outcomes | Medication data and readmission outcome for each encounter | [medications_outcomes.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/twg3sr_virginia_edu/IQCdTWMRxN2LT6B_aA1LwnofAfjj4mvQmlMKMoGLoDIdbUE?e=oNnyoZ) |
 
 **Data Dictionary:**
-| Table | Name | Data Type | Description | Example |
-|------|------|----------|------------|--------|
-| patients | patient_nbr | integer | Unique identifier for each patient | 8222157 |
-| patients | race | string | Patient race | Caucasian |
-| patients | gender | string | Patient gender | Female |
-| patients | age | string | Patient age range | [70-80) |
-| patients | weight | string | Patient weight category | ? |
-| encounters | encounter_id | integer | Unique identifier for each hospital encounter | 2278392 |
-| encounters | patient_nbr | integer | Links to patients table | 8222157 |
-| encounters | admission_type_id | integer | Encoded admission type | 6 |
-| encounters | discharge_disposition_id | integer | Encoded discharge type | 25 |
-| encounters | admission_source_id | integer | Encoded admission source | 1 |
-| encounters | time_in_hospital | integer | Days spent in hospital | 1 |
-| encounters | payer_code | string | Encoded payer type | ? |
-| encounters | medical_specialty | string | Physician specialty | ? |
-| encounters | number_outpatient | integer | Prior outpatient visits | 0 |
-| encounters | number_emergency | integer | Prior emergency visits | 0 |
-| encounters | number_inpatient | integer | Prior inpatient visits | 0 |
-| clinical | encounter_id | integer | Links to encounters table | 2278392 |
-| clinical | num_lab_procedures | integer | Number of lab procedures | 41 |
-| clinical | num_procedures | integer | Number of procedures | 0 |
-| clinical | num_medications | integer | Number of medications | 1 |
-| clinical | number_diagnoses | integer | Number of diagnoses | 1 |
-| clinical | diag_1 | string | Primary diagnosis | 250.83 |
-| clinical | diag_2 | string | Secondary diagnosis | ? |
-| clinical | diag_3 | string | Tertiary diagnosis | ? |
-| clinical | max_glu_serum | string | Glucose test category | None |
-| clinical | A1Cresult | string | A1C test category | None |
-| medications_outcomes | encounter_id | integer | Links to encounters table | 2278392 |
-| medications_outcomes | insulin | string | Insulin status | No |
-| medications_outcomes | diabetesMed | string | Diabetes medication given | Yes |
-| medications_outcomes | readmitted | string | Readmission outcome | NO |
-| medications_outcomes | diabetes_medications | string (multiple columns) | Indicators for specific diabetes medications (ex. metformin, insulin, glipizide, etc.), showing whether medication was prescribed or changed | No |
-| medications_outcomes | change | string | Indicates if diabetes medication was changed during the encounter | No |
-
-Note: The dataset contains multiple individual medication variables (ex. metformin, insulin, glipizide, glyburide). Each is encoded as a categorical variable indicating medication status (e.g., No, Steady, Up, Down). These variables were grouped for clarity in this data dictionary.
-
-**Data Dictionary Uncertainty:**
-| Feature               | % Missing | Mean | Median | Std Dev | Interpretation |
-|----------------------|----------|------|--------|--------|----------------|
-| time_in_hospital     | 0.0      | 4.40 | 4.0    | 2.99   | Slight right skew with moderate variability indicates that most patients have short stays, but some have longer hospitalizations, introducing uncertainty in predicting outcomes. |
-| number_outpatient    | 0.0      | 0.36 | 0.0    | 1.08   | Strong right skew, most patients have no outpatient visits, but a small number have many, creating high variability and uncertainty driven by outliers. |
-| number_emergency     | 0.0      | 0.20 | 0.0    | 0.93   | Strong right skew, most patients have no prior emergency visits, but a few have multiple visits, increasing uncertainty in modeling this feature. |
-| number_inpatient     | 0.0      | 0.64 | 0.0    | 1.26   | Strong right skew with relatively high spread, a small subset of patients with many prior inpatient visits contributes heavily to variability and is a key driver of uncertainty. |
-| num_lab_procedures   | 0.0      | 43.10| 44.0   | 19.67  | Slight left skew with a wide spread, high variability suggests differences in testing intensity across patients, increasing uncertainty in interpretation. |
-| num_procedures       | 0.0      | 1.34 | 1.0    | 1.71   | Right skew with moderate variability, most patients have few procedures, but some have several, contributing to uncertainty in patient complexity. |
-| num_medications      | 0.0      | 16.02| 15.0   | 8.13   | Right skew with large spread, significant variation in medication count reflects differences in treatment complexity and contributes to uncertainty in modeling. |
-| number_diagnoses     | 0.0      | 7.42 | 8.0    | 1.93   | Slight left skew with relatively low variability, values are more consistent across patients, indicating lower uncertainty compared to other features. |
+| Table | Feature | Data Type | Description | Example | % Missing | Mean | Median | Std Dev | Interpretation |
+|------|--------|----------|------------|--------|----------|------|--------|--------|----------------|
+| patients | patient_nbr | integer | Unique identifier for each patient | 8222157 | — | — | — | — | — |
+| patients | race | string | Patient race | Caucasian | — | — | — | — | — |
+| patients | gender | string | Patient gender | Female | — | — | — | — | — |
+| patients | age | string | Patient age range | [70-80) | — | — | — | — | — |
+| patients | weight | string | Patient weight category | ? | — | — | — | — | — |
+| encounters | encounter_id | integer | Unique identifier for each hospital encounter | 2278392 | — | — | — | — | — |
+| encounters | patient_nbr | integer | Links to patients table | 8222157 | — | — | — | — | — |
+| encounters | admission_type_id | integer | Encoded admission type | 6 | — | — | — | — | — |
+| encounters | discharge_disposition_id | integer | Encoded discharge type | 25 | — | — | — | — | — |
+| encounters | admission_source_id | integer | Encoded admission source | 1 | — | — | — | — | — |
+| encounters | time_in_hospital | integer | Days spent in hospital | 1 | 0.0 | 4.40 | 4.0 | 2.99 | Slight right skew, most stays are short, but some longer stays increase uncertainty |
+| encounters | payer_code | string | Encoded payer type | ? | — | — | — | — | — |
+| encounters | medical_specialty | string | Physician specialty | ? | — | — | — | — | — |
+| encounters | number_outpatient | integer | Prior outpatient visits | 0 | 0.0 | 0.36 | 0.0 | 1.08 | Strong right skew, most patients have none, but outliers increase uncertainty |
+| encounters | number_emergency | integer | Prior emergency visits | 0 | 0.0 | 0.20 | 0.0 | 0.93 | Strong right skew, few high values drive variability and uncertainty |
+| encounters | number_inpatient | integer | Prior inpatient visits | 0 | 0.0 | 0.64 | 0.0 | 1.26 | Right skew with high spread, small group drives uncertainty |
+| clinical | encounter_id | integer | Links to encounters table | 2278392 | — | — | — | — | — |
+| clinical | num_lab_procedures | integer | Number of lab procedures | 41 | 0.0 | 43.10 | 44.0 | 19.67 | Wide spread, differences in testing intensity increase uncertainty |
+| clinical | num_procedures | integer | Number of procedures | 0 | 0.0 | 1.34 | 1.0 | 1.71 | Right skew, some patients have many procedures, increasing uncertainty |
+| clinical | num_medications | integer | Number of medications | 1 | 0.0 | 16.02 | 15.0 | 8.13 | High variability, treatment complexity introduces uncertainty |
+| clinical | number_diagnoses | integer | Number of diagnoses | 1 | 0.0 | 7.42 | 8.0 | 1.93 | Low variability, more consistent across patients, lower uncertainty |
+| clinical | diag_1 | string | Primary diagnosis | 250.83 | — | — | — | — | — |
+| clinical | diag_2 | string | Secondary diagnosis | ? | — | — | — | — | — |
+| clinical | diag_3 | string | Tertiary diagnosis | ? | — | — | — | — | — |
+| clinical | max_glu_serum | string | Glucose test category | None | — | — | — | — | — |
+| clinical | A1Cresult | string | A1C test category | None | — | — | — | — | — |
+| medications_outcomes | encounter_id | integer | Links to encounters table | 2278392 | — | — | — | — | — |
+| medications_outcomes | insulin | string | Insulin status | No | — | — | — | — | — |
+| medications_outcomes | diabetesMed | string | Diabetes medication given | Yes | — | — | — | — | — |
+| medications_outcomes | readmitted | string | Readmission outcome | NO | — | — | — | — | — |
+| medications_outcomes | diabetes_medications | string (multiple) | Indicators for specific diabetes medications (ex. metformin, insulin, etc.) | No | — | — | — | — | — |
+| medications_outcomes | change | string | Whether medication was changed | No | — | — | — | — | — |
 
 
