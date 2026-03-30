@@ -12,9 +12,9 @@
 
 **Data:** [Data](https://myuva-my.sharepoint.com/:f:/r/personal/twg3sr_virginia_edu/Documents/Project1%20Data?csf=1&web=1&e=v0GJec)
 
-**Pipeline Notebook:** [Pipeline Notebook](hospital_readmission_pipeline.ipynb)
+**Pipeline Notebook:** [Pipeline Notebook](pipeline/hospital_readmission_pipeline.ipynb)
 
-**Pipeline Markdown:** [Pipeline Markdown](hospital_readmission_pipeline.md)
+**Pipeline Markdown:** [Pipeline Markdown](pipeline/hospital_readmission_pipeline.md)
 
 **License:** This project is licensed under the MIT License. See the [License](LICENSE) file for details.
 
