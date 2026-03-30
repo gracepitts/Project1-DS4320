@@ -63,11 +63,11 @@ This project belongs to the domain of healthcare analytics and hospital operatio
 **Background Readings:**
 | Title | Brief Description | Link |
 |------|------------------|------|
-| Hospital Readmission Risk and Risk Factors of People with a Primary or Secondary Discharge Diagnosis of Diabetes | Identifies key risk factors for 30-day readmission among diabetic patients, including comorbidities and length of stay. | [View Article](background_readings/Hospital%20Readmission%20Risk%20and%20Risk%20Factors%20of%20People%20with%20a%20Primary%20or%20Secondary%20Discharge%20Diagnosis%20of%20Diabetes.pdf) |
-| A Systematic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes | Summarizes recent research on diabetes-related readmissions and highlights major contributing factors. | [View Article](background_readings/A%20Systematic%20Review%20of%20Recent%20Studies%20on%20Hospital%20Readmissions%20of%20Patients%20With%20Diabetes.pdf) |
-| Taking Steps in the Hospital to Prevent Diabetes-Related Readmissions | Describes strategies hospitals can use to reduce readmissions, such as patient education and discharge planning. | [View Article](background_readings/Taking%20Steps%20in%20the%20Hospital%20to%20Prevent%20Diabetes-Related%20Readmissions.md)|
-| Diabetes | Provides an overview of diabetes, including causes, complications, and management. | [View Article](background_readings/diabetes.md) |
-| Reducing Hospital Readmissions | Explains causes of hospital readmissions and general strategies to reduce them. | [View Article](background_readings/Reducing%20Hospital%20Readmissions.md) |
+| Hospital Readmission Risk and Risk Factors of People with a Primary or Secondary Discharge Diagnosis of Diabetes | Identifies key risk factors for 30-day readmission among diabetic patients, including comorbidities and length of stay. | [View Article](https://myuva-my.sharepoint.com/:b:/g/personal/twg3sr_virginia_edu/IQDW_bYGI8XGR6XX0mP4WtK3AcTbWXTKW95g29477YhPojE?e=GPei6N) |
+| A Systematic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes | Summarizes recent research on diabetes-related readmissions and highlights major contributing factors. | [View Article](https://myuva-my.sharepoint.com/:b:/g/personal/twg3sr_virginia_edu/IQA7UGv3SE3LQqKxZkSoF5ocAdT3l-PhHTAyQjm51hcRHGw?e=7HdjXy) |
+| Taking Steps in the Hospital to Prevent Diabetes-Related Readmissions | Describes strategies hospitals can use to reduce readmissions, such as patient education and discharge planning. | [View Article](https://myuva-my.sharepoint.com/:b:/g/personal/twg3sr_virginia_edu/IQBYpmASwbRYTIfkQCJCTAhbAQRDT1hd-E0mhaCbCcP7rno?e=palDGw)|
+| Diabetes | Provides an overview of diabetes, including causes, complications, and management. | [View Article](https://myuva-my.sharepoint.com/:b:/g/personal/twg3sr_virginia_edu/IQDkNFDBA3PIS6Pg9jkogTeyAVq7kUJ60i-tOxZh3Jt7zZE?e=aiqW9J) |
+| Reducing Hospital Readmissions | Explains causes of hospital readmissions and general strategies to reduce them. | [View Article](https://myuva-my.sharepoint.com/:b:/g/personal/twg3sr_virginia_edu/IQDHoentpB16TacRvWjr7pb1AUd1EBYqaKtsl0bAvExPgvI?e=wuiTxf) |
 
 
 
