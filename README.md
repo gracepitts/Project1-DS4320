@@ -62,11 +62,11 @@ This project belongs to the domain of healthcare analytics and hospital operatio
 
 | Title | Brief Description | Link |
 |------|------------------|------|
-| Hospital Readmission Risk and Risk Factors of People with a Primary or Secondary Discharge Diagnosis of Diabetes | Identifies key risk factors for 30-day readmission among diabetic patients, including comorbidities and length of stay. | [View Article](background_readings/Hospital Readmission Risk and Risk Factors of People with a Primary or Secondary Discharge Diagnosis of Diabetes.pdf) |
-| A Systematic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes | Summarizes recent research on diabetes-related readmissions and highlights major contributing factors. | [View Article](background_readings/A Systematic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes.pdf) |
-| Taking Steps in the Hospital to Prevent Diabetes-Related Readmissions | Describes strategies hospitals can use to reduce readmissions, such as patient education and discharge planning. | [View Article](background_readings/Taking Steps in the Hospital to Prevent Diabetes-Related Readmissions.md) |
+| Hospital Readmission Risk and Risk Factors of People with a Primary or Secondary Discharge Diagnosis of Diabetes | Identifies key risk factors for 30-day readmission among diabetic patients, including comorbidities and length of stay. | [View Article](background_readings/Hospital%20Readmission%20Risk%20and%20Risk%20Factors%20of%20People%20with%20a%20Primary%20or%20Secondary%20Discharge%20Diagnosis%20of%20Diabetes.pdf) |
+| A Systematic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes | Summarizes recent research on diabetes-related readmissions and highlights major contributing factors. | [View Article](background_readings/A%20Systematic%20Review%20of%20Recent%20Studies%20on%20Hospital%20Readmissions%20of%20Patients%20With%20Diabetes.pdf) |
+| Taking Steps in the Hospital to Prevent Diabetes-Related Readmissions | Describes strategies hospitals can use to reduce readmissions, such as patient education and discharge planning. | [View Article](background_readings/Taking%20Steps%20in%20the%20Hospital%20to%20Prevent%20Diabetes-Related%20Readmissions.md)|
 | Diabetes | Provides an overview of diabetes, including causes, complications, and management. | [View Article](background_readings/diabetes.md) |
-| Reducing Hospital Readmissions | Explains causes of hospital readmissions and general strategies to reduce them. | [View Article](background_readings/Reducing Hospital Readmissions.md) |
+| Reducing Hospital Readmissions | Explains causes of hospital readmissions and general strategies to reduce them. | [View Article](background_readings/Reducing%20Hospital%20Readmissions.md) |
 
 
 
@@ -136,13 +136,13 @@ Parquet format was chosen for storage due to its efficiency and compatibility wi
 
 | Feature               | % Missing | Mean | Median | Std Dev | Interpretation |
 |----------------------|----------|------|--------|--------|----------------|
-| time_in_hospital     | 0.0      | 4.40 | 4.0    | 2.99   | Slight right skew; moderate variability indicates that most patients have short stays, but some have longer hospitalizations, introducing uncertainty in predicting outcomes. |
-| number_outpatient    | 0.0      | 0.36 | 0.0    | 1.08   | Strong right skew; most patients have no outpatient visits, but a small number have many, creating high variability and uncertainty driven by outliers. |
-| number_emergency     | 0.0      | 0.20 | 0.0    | 0.93   | Strong right skew; most patients have no prior emergency visits, but a few have multiple visits, increasing uncertainty in modeling this feature. |
-| number_inpatient     | 0.0      | 0.64 | 0.0    | 1.26   | Strong right skew with relatively high spread; a small subset of patients with many prior inpatient visits contributes heavily to variability and is a key driver of uncertainty. |
-| num_lab_procedures   | 0.0      | 43.10| 44.0   | 19.67  | Slight left skew with a wide spread; high variability suggests differences in testing intensity across patients, increasing uncertainty in interpretation. |
-| num_procedures       | 0.0      | 1.34 | 1.0    | 1.71   | Right skew with moderate variability; most patients have few procedures, but some have several, contributing to uncertainty in patient complexity. |
-| num_medications      | 0.0      | 16.02| 15.0   | 8.13   | Right skew with large spread; significant variation in medication count reflects differences in treatment complexity and contributes to uncertainty in modeling. |
-| number_diagnoses     | 0.0      | 7.42 | 8.0    | 1.93   | Slight left skew with relatively low variability; values are more consistent across patients, indicating lower uncertainty compared to other features. |
+| time_in_hospital     | 0.0      | 4.40 | 4.0    | 2.99   | Slight right skew with moderate variability indicates that most patients have short stays, but some have longer hospitalizations, introducing uncertainty in predicting outcomes. |
+| number_outpatient    | 0.0      | 0.36 | 0.0    | 1.08   | Strong right skew, most patients have no outpatient visits, but a small number have many, creating high variability and uncertainty driven by outliers. |
+| number_emergency     | 0.0      | 0.20 | 0.0    | 0.93   | Strong right skew, most patients have no prior emergency visits, but a few have multiple visits, increasing uncertainty in modeling this feature. |
+| number_inpatient     | 0.0      | 0.64 | 0.0    | 1.26   | Strong right skew with relatively high spread, a small subset of patients with many prior inpatient visits contributes heavily to variability and is a key driver of uncertainty. |
+| num_lab_procedures   | 0.0      | 43.10| 44.0   | 19.67  | Slight left skew with a wide spread, high variability suggests differences in testing intensity across patients, increasing uncertainty in interpretation. |
+| num_procedures       | 0.0      | 1.34 | 1.0    | 1.71   | Right skew with moderate variability, most patients have few procedures, but some have several, contributing to uncertainty in patient complexity. |
+| num_medications      | 0.0      | 16.02| 15.0   | 8.13   | Right skew with large spread, significant variation in medication count reflects differences in treatment complexity and contributes to uncertainty in modeling. |
+| number_diagnoses     | 0.0      | 7.42 | 8.0    | 1.93   | Slight left skew with relatively low variability, values are more consistent across patients, indicating lower uncertainty compared to other features. |
 
 
