@@ -1,6 +1,8 @@
 # DS 4320 Project 1: Identifying Factors Associated with 30-Day Hospital Readmission in Diabetic Patients
 
-**Executive Summary:** This repository contains a project focused on predicting 30-day hospital readmission risk among diabetic patients. It includes a relational dataset built from hospital encounter data, a pipeline for analysis which uses Python, SQL, and DuckDB, background readings, data documentation, and a press release that summarizes key findings.
+**Executive Summary:**
+
+This repository contains a project focused on predicting 30-day hospital readmission risk among diabetic patients. It includes a relational dataset built from hospital encounter data, a pipeline for analysis which uses Python, SQL, and DuckDB, background readings, data documentation, and a press release that summarizes key findings.
 
 **Name:** Grace Pitts
 
@@ -22,15 +24,25 @@
 
 
 ## Problem Definition
-**Initial Problem:** Predicting Hospital Readmission Risk.
+**Initial Problem:** 
 
-**Refined Problem Statement**: Identify patient characteristics and hospital encounter patterns associated with 30-day readmission among patients with diabetes to support interventions that reduce readmission rates.
+Predicting Hospital Readmission Risk.
 
-**Refinement Rationale:** The general problem of predicting hospital readmission is broad and encompasses a wide range of factors, including patient demographics, medical conditions, treatments, and hospital practices. To make the project more focused and aligned with the available data, the problem was refined to examine 30-day readmission specifically among diabetic patients using hospital encounter data. This refinement uses a clearly defined group of patients with detailed data, which allows for a more focused and meaningful analysis. By narrowing the scope to diabetic patients, the project reduces complexity while still maintaining clinical relevance. This allows for clearer identification of patterns and more interpretable insights into factors associated with readmission risk.
+**Refined Problem Statement**: 
 
-**Project Motivation**: Hospital readmissions are a major challenge in healthcare systems because they often indicate complications, poor care coordination, or inadequate follow-up treatment after discharge. Unplanned readmissions increase healthcare costs and can negatively impact patient outcomes. This issue is especially important for diabetic patients, who often require ongoing care and are at higher risk for complications that can lead to repeat hospital visits. Hospitals and healthcare providers are increasingly interested in understanding the factors that contribute to readmission so they can improve patient care and reduce unnecessary hospital visits. This project is motivated by the potential to use data analysis to better understand patterns in hospital admissions among diabetic patients and identify characteristics associated with higher readmission risk, which can hopefully help to lower the amount of readmissions.
+Identify patient characteristics and hospital encounter patterns associated with 30-day readmission among patients with diabetes to support interventions that reduce readmission rates.
 
-**Press Release:** [Predicting Hospital Readmissions to Improve Patient Care](press_release.md)
+**Refinement Rationale:** 
+
+The general problem of predicting hospital readmission is broad and encompasses a wide range of factors, including patient demographics, medical conditions, treatments, and hospital practices. To make the project more focused and aligned with the available data, the problem was refined to examine 30-day readmission specifically among diabetic patients using hospital encounter data. This refinement uses a clearly defined group of patients with detailed data, which allows for a more focused and meaningful analysis. By narrowing the scope to diabetic patients, the project reduces complexity while still maintaining clinical relevance. This allows for clearer identification of patterns and more interpretable insights into factors associated with readmission risk.
+
+**Project Motivation**: 
+
+Hospital readmissions are a major challenge in healthcare systems because they often indicate complications, poor care coordination, or inadequate follow-up treatment after discharge. Unplanned readmissions increase healthcare costs and can negatively impact patient outcomes. This issue is especially important for diabetic patients, who often require ongoing care and are at higher risk for complications that can lead to repeat hospital visits. Hospitals and healthcare providers are increasingly interested in understanding the factors that contribute to readmission so they can improve patient care and reduce unnecessary hospital visits. This project is motivated by the potential to use data analysis to better understand patterns in hospital admissions among diabetic patients and identify characteristics associated with higher readmission risk, which can hopefully help to lower the amount of readmissions.
+
+**Press Release:** 
+
+[Predicting Hospital Readmissions to Improve Patient Care](press_release.md)
 
 
 ## Domain Exposition
@@ -58,9 +70,13 @@
 | diag_1 / diag_2 / diag_3 | Primary and secondary diagnosis codes associated with the patient encounter. |
 
 **Project Domain:** 
+
+
 This project belongs to the domain of healthcare analytics and hospital operations management. Hospitals collect large amounts of data during patient visits, including diagnoses, treatments, and patient demographics. Analyzing this data can help healthcare providers identify trends and improve decision-making. In particular, predicting or understanding hospital readmissions among diabetic patients has become a major focus because it can help hospitals improve patient care and reduce unnecessary healthcare spending.
 
 **Background Readings:**
+
+
 Background readings can be found here: [link](https://myuva-my.sharepoint.com/:f:/g/personal/twg3sr_virginia_edu/IgDrX2KAueGcSIfQsf1QgLJoAfLvcSf2wZvuAKC5agkNjus?e=xINZUx)
 
 **Reading Descriptions:**
@@ -77,6 +93,7 @@ Background readings can be found here: [link](https://myuva-my.sharepoint.com/:f
 ## Data Creation
 
 **Raw Data Accquisition:**
+
 For this project, I used data from the UCI Machine Learning Repository, specifically the Diabetes 130-US Hospitals Dataset. This dataset contains hospital encounter records for diabetic patients from 130 U.S. hospitals between 1999 and 2008, including patient demographics, clinical measurements, medications, and readmission outcomes. This dataset was selected because it includes the necessary variables to perform a meaningful analysis of hospital readmissions among diabetic patients and to support predictive modeling of readmission risk. The data was originally downloaded as a CSV file and loaded into Python using pandas. The dataset was then transformed into four separate relational tables: patients, encounters, clinical, and medications_outcomes. Each table was created by selecting relevant columns and removing duplicate records based on appropriate keys. The resulting tables were saved as parquet files for efficient storage and compatibility with DuckDB.
 
 **Code Provenance Table:**
@@ -86,18 +103,22 @@ For this project, I used data from the UCI Machine Learning Repository, specific
 | diabetic_data.csv | Raw dataset used to construct the relational tables | [View Data](https://myuva-my.sharepoint.com/:f:/g/personal/twg3sr_virginia_edu/IgCBrNJwJpRyT5QfgCtf4UZVAf_5XkRYigD59zb_39zYzDU?e=bzV9zb) |
 
 **Bias Identification:**
+
 Bias in this dataset could arise in several ways. One way is that the dataset only includes patients with diabetes, which limits the ability to generalize findings to the broader population. Another way bias could arise is because the data consists only of hospital encounter records, meaning it includes individuals who accessed healthcare and excludes those without access to medical services. Bias could also be introduced due to missing values in variables such as weight and medical specialty may introduce bias if certain groups are more likely to have incomplete data. Finally, the dataset spans from 1999 to 2008, so changes in medical practices over time may limit how well the data reflects current conditions.
 
 **Bias Mitigation:**
+
 Bias can be mitigated by carefully handling missing data, such as identifying patterns of missingness and avoiding inappropriate imputation. Results should be interpreted within the context of the dataset’s limitations, particularly its focus on diabetic patients and its time period. Stratifying analyses by demographic variables such as age, gender, or race can help identify differences across groups. Clearly communicating uncertainty and avoiding overgeneralization beyond the dataset can further reduce the impact of bias.
 
 **Decision Rationale:** 
+
 The dataset was split into four relational tables to reduce redundancy and better reflect real-world healthcare data structures. Patient-level attributes were separated from encounter-level data because a single patient may have multiple hospital visits. Clinical variables and medication data were further divided to improve organization and support more flexible analysis. Parquet format was chosen for storage due to its efficiency and compatibility with DuckDB. A key decision was using patient_nbr and encounter_id as primary identifiers to define relationships between tables. However, some uncertainty remains because patient-level variables may vary across encounters, and using a single representation may not fully capture this variation. Additionally, missing values and inconsistencies in the original dataset may affect the reliability of certain features.
 
 
 ## Metadata
 
 **ERD:**
+
 <img width="474" height="450" alt="Screenshot 2026-03-28 at 10 12 39 AM" src="https://github.com/user-attachments/assets/886cfdb3-0994-427a-a187-b35e69070a1c" />
 
 **Data Table:**
