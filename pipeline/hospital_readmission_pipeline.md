@@ -1,6 +1,6 @@
 ## How to Run
 
-1. Download parquet files from OneDrive:
+1. Download parquet files from OneDrive
 
 2. Place them in the same directory as the notebook
 
