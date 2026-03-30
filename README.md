@@ -30,7 +30,7 @@
 
 **Project Motivation**: Hospital readmissions are a major challenge in healthcare systems because they often indicate complications, poor care coordination, or inadequate follow-up treatment after discharge. Unplanned readmissions increase healthcare costs and can negatively impact patient outcomes. This issue is especially important for diabetic patients, who often require ongoing care and are at higher risk for complications that can lead to repeat hospital visits. Hospitals and healthcare providers are increasingly interested in understanding the factors that contribute to readmission so they can improve patient care and reduce unnecessary hospital visits. This project is motivated by the potential to use data analysis to better understand patterns in hospital admissions among diabetic patients and identify characteristics associated with higher readmission risk, which can hopefully help to lower the amount of readmissions.
 
-[Predicting Hospital Readmissions to Improve Patient Care](press_release.md)
+**Press Release:** [Predicting Hospital Readmissions to Improve Patient Care](press_release.md)
 
 
 ## Domain Exposition
