@@ -8,7 +8,7 @@ This repository contains a project focused on predicting 30-day hospital readmis
 
 **Net ID:** twg3sr
 
-**DOI:** https://doi.org/10.5281/zenodo.19341593
+**DOI:** [DOI](https://doi.org/10.5281/zenodo.19341593)
 
 **Press Release:** [Press Release](press_release.md)
 
