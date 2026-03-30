@@ -61,6 +61,9 @@
 This project belongs to the domain of healthcare analytics and hospital operations management. Hospitals collect large amounts of data during patient visits, including diagnoses, treatments, and patient demographics. Analyzing this data can help healthcare providers identify trends and improve decision-making. In particular, predicting or understanding hospital readmissions among diabetic patients has become a major focus because it can help hospitals improve patient care and reduce unnecessary healthcare spending.
 
 **Background Readings:**
+Background readings can be found here: [link](https://myuva-my.sharepoint.com/:f:/g/personal/twg3sr_virginia_edu/IgDrX2KAueGcSIfQsf1QgLJoAfLvcSf2wZvuAKC5agkNjus?e=xINZUx)
+
+**Reading Descriptions:**
 | Title | Brief Description | Link |
 |------|------------------|------|
 | Hospital Readmission Risk and Risk Factors of People with a Primary or Secondary Discharge Diagnosis of Diabetes | Identifies key risk factors for 30-day readmission among diabetic patients, including comorbidities and length of stay. | [View Article](https://myuva-my.sharepoint.com/:b:/g/personal/twg3sr_virginia_edu/IQDW_bYGI8XGR6XX0mP4WtK3AcTbWXTKW95g29477YhPojE?e=GPei6N) |
