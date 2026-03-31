@@ -10,7 +10,7 @@ This repository contains a project focused on predicting 30-day hospital readmis
 
 **Links:**
 
-[DOI](https://doi.org/10.5281/zenodo.19341593)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19341593.svg)](https://doi.org/10.5281/zenodo.19341593)
 
 [Press Release](press_release.md)
 
